@@ -1,0 +1,279 @@
+#homepage {
+  margin: 0;
+  background-color: white;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#images-homepage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bande-blanche-bottom {
+  height: 15px;
+  background-color: white;
+  width: 100vw;
+  position: fixed;
+  bottom: 0%;
+  z-index: 101;
+}
+
+#bande-blanche-right {
+  width: 15px;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+  right: 0%;
+  z-index: 101;
+}
+
+#bande-blanche-top {
+  height: 15px;
+  background-color: white;
+  width: 100vw;
+  position: fixed;
+ top: 0%;
+ z-index: 101;
+}
+
+#bande-blanche-left {
+  width: 15px;
+  background-color: white;
+  height: 100vh;
+  position: fixed;
+ left: 0%;
+ z-index: 101;
+}
+
+#left {
+  width: 50%;
+  height: 100%;
+  float: left;
+  position: relative;
+  animation: alternate;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+z-index: 100;
+}
+
+#left:hover {
+  background-image: url(../images/black-bg-50.png);
+}
+
+#realisations {
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 70px;
+}
+
+.realisations-hover {
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  font-family: 'Cormorant Garamond', serif;
+  color: black;
+  font-size: 70px;
+}
+
+#right {
+  width: 50%;
+  height: 100%;
+  float: right;
+  position: relative;
+  animation: alternate;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  z-index: 100;
+}
+
+#right:hover {
+  background-image: url(../images/black-bg-50.png);
+}
+
+#a-propos {
+  position: absolute;
+  top: 50%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  font-family: 'Cormorant Garamond', serif;
+  color: white;
+  font-size: 70px;
+}
+
+.a-propos-hover {
+  color: white;
+}
+
+#image-full {
+width: 100vw;
+height: auto;
+position: absolute;
+top: 0;
+left: 0;
+}
+
+
+#celine {
+  border-radius: 50%;
+  border: 2px solid white;
+  position: absolute;
+  right: 44%;
+  top: 10%;
+  z-index: 200;
+  height: 70px;
+  width: auto;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  animation: alternate;
+}
+
+.celine-hover {
+transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-630px); /* On déplace l'objet */
+  animation: alternate;
+}
+
+#celine-euzen {
+  position: absolute;
+  right: 35%;
+  top: 85%;
+  z-index: 200;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  animation: alternate;
+}
+
+
+.celine-euzen-hover {
+transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-630px); /* On déplace l'objet */
+  animation: alternate;
+  opacity: 0;
+}
+
+.celine-euzen-bis {
+  position: absolute;
+  right: 35%;
+  top: 85%;
+  z-index: 200;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter;
+  color: white;
+  transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  animation: alternate;
+  opacity: 0;
+}
+
+.celine-euzen-bis-hover {
+transition-property: transform;
+  transition-duration: 0.5s;
+  transition-timing-function: ease; /* Transition de type ease */
+  transform: translateX(-630px); /* On déplace l'objet */
+  animation: alternate;
+  opacity: 1;
+}
+
+.bande-blanche-middle-left {
+  height: 2px;
+  width: 320px;
+  position: absolute;
+  top: 59%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  background-color: white;
+  opacity: 0;
+  z-index: 201;
+}
+
+.bande-blanche-middle-left-hover {
+  opacity: 1;
+}
+
+
+.bande-blanche-middle-right {
+  height: 2px;
+  width: 320px;
+  position: absolute;
+  top: 59%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  background-color: white;
+  opacity: 0;
+  z-index: 201;
+}
+
+.bande-blanche-middle-right-hover {
+  opacity: 1;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: lighter;
+  font-size: 15px;
+  color: white;
+}
+
+
+a:hover {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.a1 {
+  position: absolute;
+  top: 62%; left: 35%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  opacity: 0;
+}
+
+.a2 {
+  position: absolute;
+  top: 62%; left: 50%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  opacity: 0;
+}
+
+.a3 {
+  position: absolute;
+  top: 62%; left: 65%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  opacity: 0;
+}
+
+.a4 {
+  position: absolute;
+  top: 62%; left: 40%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  opacity: 0;
+}
+
+.a5 {
+  position: absolute;
+  top: 62%; left: 57%; /* à 50%/50% du parent référent */
+  transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 1;
+}
